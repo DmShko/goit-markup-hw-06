@@ -394,35 +394,35 @@
             </button>
             <div class="modal-container">
                 <form class="modal-form" name="modal-form" autocomplete="off" novalidate>
-                    <p class="modal-text">Leave your contacts and we will call you back</p>
+                    <strong class="modal-text">Leave your contacts and we will call you back</strong>
                     <ul class="modal-form-list">
                         <li class="modal-form-item">
                             <label class="modal-form-lable" for="user-name">Name</label>
                             <div class="form-input-icon">
+                                <input class="modal-form-input" type="text" name="user-name" id="user-name">
                                 <svg class="form-input-svg" width="18" height="24">
                                   <use href="./images/icons.svg#icon-Frame-1"></use>
                                 </svg>
-                                <input class="modal-form-input" type="text" name="user-name">
                             </div>
                         </li>
 
                         <li class="modal-form-item">
                             <label class="modal-form-lable" for="user-phone">Phone</label>
                             <div class="form-input-icon">
+                                <input class="modal-form-input" type="tel" name="user-phone" id="user-phone">
                                 <svg class="form-input-svg" width="18" height="24">
                                   <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                                 </svg>
-                            <input class="modal-form-input" type="tel" name="user-phone">
                             </div>
                         </li>
 
                         <li class="modal-form-item">
                             <label class="modal-form-lable" for="user-email">Email</label>
                             <div class="form-input-icon">
+                                <input class="modal-form-input" type="email" name="user-email" id="user-email">
                                 <svg class="form-input-svg" width="18" height="24">
                                   <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                                 </svg>
-                            <input class="modal-form-input" type="email" name="user-email">
                             </div>
                         </li>
 
@@ -434,13 +434,17 @@
 
                     <label class="modal-checkbox">
                         <input class="item-checkbox" type="checkbox" name="privacy-policy">
+                        <svg class="item-checkbox-icon" width="16" height="16">
+                          <use class="item-checkbox-uncheck" href="./images/icons.svg#icon-checkboxDefault"></use>
+                          <use class="item-checkbox-check" href="./images/icons.svg#icon-checkboxclick"></use>
+                        </svg>
                         <span class="modal-checkbox-text">
                             I accept the terms and conditions of the
-                            <a class="link-checkbox" href="">Privacy Policy</a>
+                            <a class="link-checkbox" href="" target="_blank" rel="noreferrer noopener" aria-label="Privacy Policy">Privacy Policy</a>
                         </span>
                     </label>
                 
-                    <button class="send-button">Send</button>
+                    <button class="send-button" type="submit">Send</button>
                 </form>
             </div>    
         </div>
